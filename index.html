@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array Fruits prompt</h2>
+
+      <script>
+        let array=[];
+        let choice;
+
+        do{
+            console.log("Menu driven program of array of fruits")
+            console.log("1. Push");
+            console.log("2. Pop");
+            console.log("3. Display");
+            console.log("4. Exit");
+            choice = parseInt (prompt("Enter the choice:"));
+
+            switch(choice){
+                case 1: 
+                   let name = prompt("Enter the name of the fruit:");
+                   array.push(name);
+                   break;
+                case 2: 
+                   array.pop();
+                   break;
+                case 3: 
+                   console.log("The array of fruits is " + "" +array);
+                   break;
+                case 4: 
+                   console.log("Exiting the program");
+                   break;
+                default : 
+                  console.log("Invalid choice");
+                  break;
+
+            }
+        }while (choice !== 4) ;
+
+</script>  
+</body>
+</html>
